@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class TileType
+public class Tile
 {
     public enum terrain { plains, grassland, badlands, peaks}
     
@@ -35,13 +35,13 @@ public class TileType
                 this.name = "Badlands";
                 this.tilePrefab = Resources.Load<GameObject>("Prefabs/Terrain/tile_badlands");
                 this.isWalkable = true;
-                this.movementCost = 1.0f;
+                this.movementCost = 4.0f;
                 break;
             case terrain.peaks:
                 this.name = "Peaks";
                 this.tilePrefab = Resources.Load<GameObject>("Prefabs/Terrain/tile_peaks");
                 this.isWalkable = false;
-                this.movementCost = 1.0f;
+                this.movementCost = -1.0f;
                 break;
             default:
                 this.name = "Error!";
@@ -52,7 +52,7 @@ public class TileType
         }
     }
 
-    public TileType()
+    public Tile()
     {
         this.terrain_type = terrain.plains;
         this.name = "Plains";
@@ -61,7 +61,7 @@ public class TileType
         this.movementCost = 1.0f;
     }
 
-    public TileType(terrain _terrain)
+    public Tile(terrain _terrain)
     {
         this.terrain_type = _terrain;
         switch (_terrain)

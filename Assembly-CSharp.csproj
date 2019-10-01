@@ -54,8 +54,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\game.cs" />
-     <Compile Include="Assets\Scripts\mapTile.cs" />
-     <Compile Include="Assets\Scripts\TileType.cs" />
+     <Compile Include="Assets\Scripts\Node.cs" />
+     <Compile Include="Assets\Scripts\Tile.cs" />
+     <Compile Include="Assets\Scripts\TileScript.cs" />
+     <Compile Include="Assets\Scripts\Unit.cs" />
+     <Compile Include="Assets\Scripts\UnitScript.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/dchuraev/Documents/Unity/Badland/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
