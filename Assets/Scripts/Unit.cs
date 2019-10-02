@@ -15,6 +15,9 @@ public class Unit
     public bool flatMovementCost = false;
     public bool flying = false;
 
+    public float movementMax = 2f;
+    public float movementLeft = 2f;
+
     public GameObject unit_go;
 
     public List<Node> current_path;
